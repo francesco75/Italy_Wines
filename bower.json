@@ -1,0 +1,22 @@
+{
+  "name": "Wine Project",
+  "description": "This Website describes the Italy Wines for each region and grapes features",
+  "main": "index.js",
+  "authors": [
+    "FRSCO <frscollo@hotmail.it>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/francesco75/Italy_Wines",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "angular": "^1.7.3",
+    "angular-route": "^1.7.3"
+  }
+}
