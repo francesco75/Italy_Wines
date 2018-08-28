@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html ng-app='TodoApp'>
+<html ng-app='App'>
 <head>
     <base href="/"> <!-- needed for Angular HTML 5 mode -->
     <title>Progetto Wines</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylehome.css">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <style type="text/css">
-        body {
-            padding-top: 70px;
-        }
-    </style>
+    
 </head>
-<body>
+<body ng-app='buttonapp'>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -38,11 +37,16 @@
     </nav>
 
     <div ng-view>
-        
        
     </div>
-
+    
+    <footer class="col-12">
+                <p> Copyright</p>
+                <p>@THe Wine Italy  2018<p>
+                
+    </footer>
 <script src='js/app.js'></script>
+<script src='js/applic.js'></script>
 <script src='js/controller.js'></script>
 <script src='js/service.js'></script>
 </body>

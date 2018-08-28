@@ -1,0 +1,34 @@
+body {
+            padding-top: 70px;
+            background-image: linear-gradient(to bottom right, red, pink);
+
+        }
+.jumbotron
+       {       
+              background-image: url("/images/vino.jpg");
+              background-color: #cccccc;
+              min-height: 50%;
+              background-repeat: no-repeat;
+              background-position: center;
+              -webkit-background-size: cover;
+              background-size: cover;
+              opacity: 1;
+
+
+         }
+.para1{
+	      color:white;
+	      text-align: center;
+}         
+
+.navbar{
+            background-image: linear-gradient(to bottom right, red, green);
+          
+
+}         
+footer{
+	      padding-top: 5px;
+          background-color::;
+          text-align: center;
+          height: 100px;
+}
