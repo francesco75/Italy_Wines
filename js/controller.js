@@ -19,5 +19,22 @@ angular.module('RouteControllers', [])
                     alert("Registration failed, please try again with another username.");
                 });
             }
-        };  
+        };
+     // .controller('LoginController',function($scope,UserAPIService){
+     //        if ($scope.registrationForm.$valid) {
+     //            $scope.registrationUser.username = $scope.user.username;
+     //            $scope.registrationUser.password = $scope.user.password;
+
+     //            UserAPIService.registerUser(URL + "accounts/register/", $scope.registrationUser).then(function(results) {
+     //                $scope.data = results.data;
+     //                alert("You have successfully log in ");
+     //            }).catch(function(err) {
+     //                console.log(err);
+     //                alert("Registration failed, please try again with another username.");
+     //            });
+            
+     //        }
+     //    };
+    
+          
     });

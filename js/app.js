@@ -27,6 +27,10 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
                 templateUrl: 'templates/register.html',
                 
             })
+    .when('/profile', {
+                templateUrl: 'templates/profile.html',
+                
+            })
     .when("/center", {
         templateUrl : "templates/center.html"
     })
