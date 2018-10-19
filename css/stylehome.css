@@ -7,7 +7,7 @@ body {
        {
 
 
-              background-image: url("../images/vino.jpg");
+              background-image: url("./images/vino.jpg");
               background-color: #cccccc;
               min-height: 50%;
               background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 #para1,#para2,#para3,#para4{
 	      color:black;
 	      text-align: center;
-        background-image:linear-gradient(to right,red 0%,white 100%), url("../images/oak.jpg ");
+        background-image:linear-gradient(to right,red 0%,white 100%), url("./images/oak.jpg ");
         background-blend-mode: screen;
         min-height: 20%;
         background-repeat: no-repeat;
