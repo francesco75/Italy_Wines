@@ -15,7 +15,8 @@ body {
               -webkit-background-size: cover;
               background-size: cover;
               opacity: 1;
-              font-family: 'Kaushan Script';font-size: 22px;
+              font-family: 'Kaushan Script';font-size: 22px; 
+
 
          }
          
@@ -53,6 +54,7 @@ button {
 .region{
          color: darkred;
          font-weight: bold;
+         
 
 }
 .head{
@@ -72,12 +74,74 @@ p.test {
     border: 1px solid #000000;
     word-wrap: break-word;
 }
-.test1{
+.style1,
+.style2
+         {
             border: 1px solid #000000;
             color: red;
             padding-left: 8px;
             font-weight: bold;
 
 }
+.style3,
+.style4,
+.style5
+         {
+            border: 1px solid #000000;
+            color: blue;
+            padding-left: 8px;
+            font-weight: bold;
+
+}
+.alpha{
+          
+          font-weight: bold;
+          
+}
+#demo{
+        color:black;
+        font-weight: bold;
+        text-align: center;
+        background-image:linear-gradient(to right,red 0%,white 100%), url("/images/oak.jpg ");
+        background-blend-mode: screen;
+        min-height: 20%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        opacity: 1;
+        font-family: 'Kaushan Script';font-size: 15px; 
+        
+}
+p.alpha1{
+             color: black;
+             font-weight: bold;
 
 
+                     }
+#mytable, tr{  
+              border:1px solid;
+              
+            
+
+         }
+        th, td{
+               padding-left: 5px;
+
+         }
+#cont{ 
+        color:black;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Kaushan Script';font-size: 35px; 
+        
+
+}
+figcaption{
+             font-weight: bold;
+             border: 1px black  solid;
+             padding-left: 4px;
+             padding-top:4px; 
+
+
+}

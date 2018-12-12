@@ -18,7 +18,7 @@
 <body ng-app='App'  >
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container" >
+        <div class="container" ng-controller="HomeController" >
             <div class="navbar-header">
                 <a class="navbar-brand" href="/"> Italian Wine</a>
                 <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
@@ -33,7 +33,7 @@
                  <li><a href="/todo">Production</a></li>
                  <li><a href="/todo1">Grapes</a></li>
                  <li><a href="/accounts/register">Register </a></li>
-                 <li><a href="/login">Log in </a></li>
+                 <li><a href="/test">Quiz </a></li>
                </ul>    
         </div>
     </nav>
@@ -71,21 +71,11 @@
     </div>
     <footer class="col-12">
                 <p> Copyright</p>
-                <p>@THe Wine Italy  2018</p>
-                
+                <p>@The  Italy Wine  2018</p>                
     </footer>
 </div>
-
 <script src='js/app.js'></script>
-<!--<script src='js/applic.js'></script>!-->
 <script src='js/controller.js'></script>
-
-
-
-<script src='js/login.controller.js'></script>
 <script src='js/service.js'></script>
-
-
-
 </body>
 </html>

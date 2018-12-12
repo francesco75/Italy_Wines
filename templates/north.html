@@ -15,12 +15,12 @@
            </map>
     	</div>
     	
-    	<div class="col-md-6">
+    	<div class="col-md-6" ng-class="myClass">
               <div id="para1">
                 <h2>Aosta Piemonte Liguria Wines</h2>
                 <button><a class="region" href="/gal1">Gallery</a></button>
     			<h3 >Aosta</h3>
-                <p>The terrain of Valle d'Aosta is mostly mountainous, leaving little room for vineyards: it is no coincidence that the region occupies last place in all of Italy for the quantity of wine produced per region.
+                <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">The terrain of Valle d'Aosta is mostly mountainous, leaving little room for vineyards: it is no coincidence that the region occupies last place in all of Italy for the quantity of wine produced per region.
                 </p>
                 <h3>Piemonte</h3>
                 <p>The cultivation of wine was introduced to Piedmont in the 4th or 5th century B.C. by the ancient Greeks, but it was "only" during the period of the Roman Empire that vineyards were distributed throughout the territory: in this period they perfected their cultivation techniques and built the first underground wine cellars to improve the quality of the wine.                    
@@ -34,19 +34,20 @@
     </div>
         <div class="row">
             <div class="col-md-4">
-               <div id="para2">
+               <div id="para2" ng-class="myClass">
                   <h2>Lombardia & Trentino Wines</h2>
                   <h3>The Lombardia  Wines</h3>
-                  <p>Lombardia (Lombardy) wine is the Italian wine produced in the Lombardy region of north central Italy. The region is known particularly for its sparkling wines made in the Franciacorta and Oltrepò Pavese areas. Lombardy also produces still red, white and rosé wines made from a variety of local and international grapes including Nebbiolo wines in the Valtellina region, Trebbiano di Lugana white wines produced with the Chiaretto style rosé along the shores of Lake Garda.</p>
+                  <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">Lombardia (Lombardy) wine is the Italian wine produced in the Lombardy region of north central Italy. The region is known particularly for its sparkling wines made in the Franciacorta and Oltrepò Pavese areas. Lombardy also produces still red, white and rosé wines made from a variety of local and international grapes including Nebbiolo wines in the Valtellina region, Trebbiano di Lugana white wines produced with the Chiaretto style rosé along the shores of Lake Garda.</p>
                   <h3>The Trentino Wines</h3>
                   <p>One main distinction between Trentino and South Tyrol wine production is the fact that in the northern area (South Tyrol) the wines are produced mostly by small family-owned and managed wineries that sell their high quality wine mainly locally with limited exports to Germany and Austria. Trentino on the other hand counts on a large number of growers who joined into large cooperatives, such as Ca'vit and Mezzacorona, which produce wines that have consistent taste and characteristics year after year. These wines are popular, both in Italy and abroad, among wine drinkers who look for reasonably good and affordable wines for daily enjoyment.</p>
               </div>
            </div>
            <div class="col-md-4">
-            <div id="para3">
+            <div id="para3" ng-class="myClass">
                 <h2>Veneto & Friuli Wines</h2>
+                <button><a class="region" href="/gal4">Gallery</a></button>
                 <h3>The Veneto Wines</h3>
-                <p>Amarone della Valpolicella Amarone della Valpolicella classico Amarone della Valpolicella Valpantena Bagnoli Friularo Bagnoli Friularo classico Bagnoli Friularo classico passito Bagnoli Friularo classico riserva Bagnoli Friularo classico vendemmia tardiva Bagnoli Friularo passito Bagnoli Friularo vendemmia tardiva      
+                <p  ng-mouseover="addClass()"    ng-mouseleave="removeClass()">Amarone della Valpolicella Amarone della Valpolicella classico Amarone della Valpolicella Valpantena Bagnoli Friularo Bagnoli Friularo classico Bagnoli Friularo classico passito Bagnoli Friularo classico riserva Bagnoli Friularo classico vendemmia tardiva Bagnoli Friularo passito Bagnoli Friularo vendemmia tardiva      
                 </p>
                 <h3>Friuli Wines</h3>
                 <p>Friuli-Venezia Giulia wine (or Friuli wine) is wine made in the northeastern Italian region of Friuli-Venezia Giulia. Once part of the Venetian Republic and with sections under the influence of the Austro-Hungarian Empire for some time, the wines of the region have noticeable Slavic and Germanic influences. There are 11 Denominazione di origine controllata (DOC) and 3 Denominazione di Origine Controllata e Garantita (DOCG) in the Friuli-Venezia Giulia area. 
@@ -55,10 +56,11 @@
             </div>
           </div>
           <div class="col-md-4">  
-            <div id="para4">
+            <div id="para4" ng-class="myClass">
                 <h2>Emilia & Tuscany Wines</h2>
+                <button><a class="region" href="/gal3">Gallery</a></button>
                 <h3>Emilia Romagna Wines</h3>
-                <p>The Emilia-Romagna region has a growing relevance in the world of Italian wines. It produces 15% of Italian wine and has seen a steady increase in exports, with the biggest markets represented by Germany, the United States, England, Switzerland, and increasingly Russia, China and Brasil.
+                <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">The Emilia-Romagna region has a growing relevance in the world of Italian wines. It produces 15% of Italian wine and has seen a steady increase in exports, with the biggest markets represented by Germany, the United States, England, Switzerland, and increasingly Russia, China and Brasil.
                 </p>
                 <h3 >Tuscany Wines</h3>
                 <p>Tuscan wine (Italian Toscana) is Italian wine from the Tuscany region. Located in central Italy along the Tyrrhenian coast, Tuscany is home to some of the world's most notable wine regions. Chianti, Brunello di Montalcino and Vino Nobile di Montepulciano are primarily made with Sangiovese grape whereas the Vernaccia grape is the basis of the white Vernaccia di San Gimignano. Tuscany is also known for the dessert wine Vin Santo, made from a variety of the region's grapes. Tuscany has thirty-three Denominazioni di origine controllata (DOC) and eleven Denominazioni di Origine Controllata e Garantita (DOCG). In the 1970s a new class of wines known in the trade as "Super Tuscans" emerged                    
@@ -68,3 +70,4 @@
     	</div>
     
    <script type="text/javascript" src='js/regione.js'></script>
+   

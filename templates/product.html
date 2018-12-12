@@ -1,7 +1,76 @@
-<div class="container">
+   <script>
+   	   function testo(a){
+         if (a==1){
+                text="Harvesting is the first step in the wine making process and an important part of ensuring delicious wine. Grapes are the only fruit that have the necessary acids, esters, and tannins to consistently make natural and stable wine. Tannins are textural elements that make the wine dry and add bitterness and astringency to the wine.The moment the grapes are picked determines the acidity, sweetness, and flavor of the wine. Determining when to harvest requires a touch of science along with old fashioned tasting. The acidity and sweetness of the grapes should be in perfect balance, but harvesting also heavily depends on the weather. "        	        
+         }
+         if (a==2){
+                text="After the grapes are sorted, they are ready to be de-stemmed and crushed. For many years, men and women did this manually by stomping the grapes with their feet. Nowadays, most wine makers perform this mechanically. Mechanical presses stomp or trod the grapes into what is called must. Must is simply freshly pressed grape juice that contains the skins, seeds, and solids. Mechanical pressing has brought tremendous sanitary gain as well as increased the longevity and quality of the wine."        	
+               
+         }
+         if (a==3){
+                text="After crushing and pressing, fermentation comes into play. Must (or juice) can begin fermenting naturally within 6-12 hours when aided with wild yeasts in the air. However, many wine makers intervene and add a commercial cultured yeast to ensure consistency and predict the end result.Fermentation continues until all of the sugar is converted into alcohol and dry wine is produced. To create a sweet wine, wine makers will sometimes stop the process before all of the sugar is converted. Fermentation can take anywhere from 10 days to one month or more."        	
+               
+            }   
+         if (a==4){
+                text="Clarification is the process in which solids such as dead yeast cells, tannins, and proteins are removed. Wine is transferred or “racked” into a different vessel such as an oak barrel or a stainless steel tank. Wine can then be clarified through fining or filtration.Fining occurs when substances are added to the wine to clarify it. For example, a wine maker might add a substance such as clay that the unwanted particles will adhere to. This will force them to the bottom of the tank. Filtration occurs by using a filter to capture the larger particles in the wine. The clarified wine is then racked into another vessel and prepared for bottling or future aging."        	
+               
+         }
+
+         
+         if (a==5){
+                text="Aging and bottling is the final stage of the wine making process. A wine maker has two options: bottle the wine right away or give the wine additional aging. Further aging can be done in the bottles, stainless steel tanks, or oak barrels. Aging the wine in oak barrels will produce a smoother, rounder, and more vanilla flavored wine. It also increases wine’s exposure to oxygen while it ages, which decreases tannin and helps the wine reach its optimal fruitiness. Steel tanks are commonly used for zesty white wines."        	
+               
+         }
+
+         document.getElementById("demo").innerHTML = text;
+
+   	   };
+
+
+
+
+
+   </script>
+    
     <div class="row">
         <div class="col-md-12">
-            <h1> The Production </h1>
+            <h1 class="head"> The Production </h1>
         </div>
     </div>
-</div>
+    <div class="row">
+    	<div class="col-md-4">
+    		<h2 class="head">Harvesting</h2>
+         		<img src="/images/harvest.jpg" alt="" onclick="testo(1)" width="80%" height="auto">
+    	</div>
+    	<div class="col-md-4">
+    		<h2 class="head">Crushing & Pressimg</h2>
+    		<img src="/images/crushpress.jpg" alt="" onclick="testo(2)" width="80%" height="auto">
+    	</div>
+    	<div class="col-md-4">
+    		<h2 class="head">Fermentation</h2>
+    		<img src="/images/ferment.jpg" alt="" onclick="testo(3)" width="80%" height="auto">
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-md-4">
+    		<h2 class="head">Classification</h2>
+    		<img src="/images/classif.jpg" alt="" onclick="testo(4)" width="80%" height="auto">
+    	</br></br>
+    	</div>
+    	<div class="col-md-4">
+    		<div class="btn-group">
+                 <button type="button" onclick="testo(1)"class="btn btn-info">Harvesting</button>
+                 <button type="button" onclick="testo(2)" class="btn btn-info">Crushing & Press</button>
+                 <button type="button" onclick="testo(3)" class="btn btn-info">Fermentantion</button>
+                 <button type="button" onclick="testo(4)" class="btn btn-info">Classification</button>
+                 <button type="button" onclick="testo(5)" class="btn btn-info">Aging and Bottling</button>
+           </div>
+             </br></br>
+    		<div id="demo"></div>
+         </div>
+    	
+    	<div class="col-md-4">
+    		<h2 class="head">Aging and Bottling</h2>
+    		<img src="/images/bottleage.jpg" alt="" onclick="testo(5)" width="80%" height="auto">
+    	</div>
+    </div>
