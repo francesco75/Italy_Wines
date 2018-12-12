@@ -5,24 +5,49 @@
 </div>
 <div class="row">
 	<div class="col-md-6">
-			<img class="push" src="images/Sicily.jpg" alt="Workplace" title="Sicily Wines" width="80%" height="auto">
-			<div id="para3">
+			<img class="push" src="/images/Sicily.jpg" alt="Workplace" title="Sicily Wines" width="80%" height="auto">
+			<div id="para3" ng-class="myClass">
 		       <h3 >Sicily</h3>
-               <p>One of Europe's oldest viticultural regions still offers some pleasant surprises. Sicily's oenological history is an ancient one, dating from the time when the island was part of Magna Graecia. One usually associates fine wines with western Sicily or the areas near Mount Etna, but many new wineries have sprung up across the island. Sicilian oeniculture is not just varietals. Sicily's vintage wines are a magical creation, and many of the island's traditional wines and spirits are famous far beyond its shores. Several boast denomination of origin (appellation). Sicily has its own table and dessert wines, and a number of regional liqueurs.
+               <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">One of Europe's oldest viticultural regions still offers some pleasant surprises. Sicily's oenological history is an ancient one, dating from the time when the island was part of Magna Graecia. One usually associates fine wines with western Sicily or the areas near Mount Etna, but many new wineries have sprung up across the island. Sicilian oeniculture is not just varietals. Sicily's vintage wines are a magical creation, and many of the island's traditional wines and spirits are famous far beyond its shores. Several boast denomination of origin (appellation). Sicily has its own table and dessert wines, and a number of regional liqueurs.
                The magic is in the fertile soil and Sicily's long, cloudless summers – with humidity but virtually no rain from June until harvesting in late August – two factors which make Sicilian vintages remarkably consistent from year to year.
                	
-               </p>  		
+               </p>
+               <button ng-click =" toggle()">Gallery</button>
+                <div ng-show = "showMe"><h2 class="head">The Nero D'Avola</h2> 
+                       <P><img src="/images/nero.jpg" width="15%" height="auto"><br> 
+                       	Nero d'Avola is "the most important red wine grape in Sicily" and is one of Italy's most important indigenous varieties. It is named after Avola in the far south of Sicily and its wines are compared to New World Shirazes, with sweet tannins and plum or peppery flavours. It also contributes to Marsala Rubino blends. 
+                       </P>
+                       <h2 class="head">Insolia </h2>
+                       <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()"> <img src="/images/insolia.jpg" width="15%" height="auto"><br>
+                       Insolia is a white-wine grape most likely originating in Sicily, its chief contemporary home, but possibly long ago imported thence from Greece. Nowadays, while it is mainly grown in Sicily (chiefly in western Sicily), it also appears in some Tuscan whites (there usually listed as "Ansonica").
+
+                        Insolia—also commonly spelled "Inzolia"—is much used (along with Grillo and Cataratto) in the making of Marsala, a sweet fortified wine. As is often the case with grape types used as the base for something else—from Marsala to brandy to Champagne—the base grapes are not themselves very exciting, the value of the end product being generated in the processing. Nonetheless, varietal wines are made of each of those three grapes, and Insolia and Grillo can, as table wines, occasionally reach levels of high quality. 
+                         
+                       </p>
+                </div>
+            
 
 	</div>
     </div>
 	<div class="col-md-6">
-		<img class="push1" src="images/sardinia.jpg" alt="Workplace" title="Sardinia Wines" width="60%" height="auto">
-		<div id="para4">
+		<img class="push1" src="/images/sardinia.jpg" alt="Workplace" title="Sardinia Wines" width="60%" height="auto">
+		<div id="para4" ng-class="myClass">
 		       <h3 >Sardinia</h3>
-               <p>Sardinia is one of the best deals Europe has to offer. It has white sandy beaches, turquoise clear waters and rugged, quintessential island landscape. Actually, Sardinia is even better than that: there’s a treasure of wines to discover as well! Let’s discover the primary wines you’ll get to drink from Sardinia. It’s time to start planning your next winecation…
+               <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">Sardinia is one of the best deals Europe has to offer. It has white sandy beaches, turquoise clear waters and rugged, quintessential island landscape. Actually, Sardinia is even better than that: there’s a treasure of wines to discover as well! Let’s discover the primary wines you’ll get to drink from Sardinia. It’s time to start planning your next winecation…
 
 
                </p>  		
+               <button ng-click =" toggle1()">Gallery</button>
+               <div ng-show = "show_Me"><h2 class="head">Torbato</h2> 
+                       <P><img src="/images/torbato.jpg" width="15%" height="auto"><br> 
+                       	One of the hidden gems in Alghero is Torbato, a grape originally from Spain with only about 200 acres left in the world. Torbato produces refreshing, pale-straw wine marked by white flowers and hints of sea minerals. The sparkling version is a must as an aperitif but there are also still versions–ranging from gentle, mid-low body to richer, creamier versions. All are definitely worth trying with light fish appetizers, oysters, and clam spaghetti. 
+                       </P>
+                       <h2 class="head">Cannonau </h2>
+                       <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()"> <img src="/images/cannonau.jpg" width="15%" height="auto"><br>
+                       Of course, no overview of Sardinia would be complete without mentioning Cannonau (a.k.a. French Grenache, Spanish Garnacha) the most planted variety by far (30% of total) and concentrated in the center of the island. It gives its best on warm, gravely/pebbly soils that limit its natural productivity. The wines are generally high in alcohol and lower in acidity providing for nice round flavors. The intense scents of dark red berries, plum and tobacco are reflected in the taste where notes of chocolate and coffee from oak casks make their appearance. It’s a wine worth aging and does extremely well in blends such as the Mandrolisai (together with red varieties Monica and Bovale sardo).  
+                       </p>
+                </div>
+
 
 	</div>
 	</div>

@@ -2,7 +2,7 @@ angular.module('App', ['ngRoute', 'RouteControllers','UserService']);
  
 angular.module('App').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
-
+    
 
      
 
@@ -15,11 +15,11 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
     })
     $routeProvider.when('/todo', {
         templateUrl: 'templates/product.html',
-        //controller: 'HomeController'
+        controller: 'HomeController'
     })
     $routeProvider.when('/todo1', {
         templateUrl: 'templates/grapes.html',
-        //controller: 'HomeController'
+        controller: 'HomeController'
     })
     
     .when('/accounts/register', {
@@ -27,29 +27,42 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
                 templateUrl: 'templates/register.html',
                 
             })
-    .when('/profile', {
-                templateUrl: 'templates/profile.html',
-                
-            })
+    
     .when("/center", {
-        templateUrl : "templates/center.html"
+        templateUrl : "templates/center.html",
+        controller: 'HomeController',
     })
     .when("/south", {
-        templateUrl : "templates/south.html"
+        templateUrl : "templates/south.html",
+        controller: 'HomeController',
     })
         .when("/island", {
-        templateUrl : "templates/islands.html"
+        templateUrl : "templates/islands.html",
+        controller: 'HomeController',
     })
          .when("/gal1", {
-        templateUrl : "templates/galnorth1.html"
+        templateUrl : "templates/galnorth1.html",
+        controller: 'HomeController',
     })
-
-     $routeProvider.when('/login', {
-        templateUrl: 'templates/login.html',
-        controller: 'LoginrController',
-        
-        
-
+         .when("/gal3", {
+        templateUrl : "templates/galnorth2.html",
+        controller: 'HomeController',
     })
+         .when("/gal2", {
+        templateUrl : "templates/galcenter1.html",
+        controller: 'HomeController',
+    })
+         .when("/gal4", {
+        templateUrl : "templates/galnorth3.html",
+        controller: 'HomeController',
+    })
+         
+       .when("/test", {
+        templateUrl : "templates/quiz.html",
+        controller: 'HomeController',
+    })
+    
+
+     
             
 });

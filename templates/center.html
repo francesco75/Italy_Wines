@@ -1,47 +1,69 @@
 
 
     <div class="row">
-        <div class="col-md-12">	
-            <h1 class="head"> The Center </h1>
+        <div class="col-md-12"> 
+            <h1 class="head"> The Center </h1>                       
         </div>
     </div>
     <div class="row">
-    	<div class="col-md-6">
-    		<img src="images/center.jpg" alt="Workplace" usemap="#workmap" width="80%" height="auto">
-    		<map name="workmap">
+        <div class="col-md-6">
+          
+        </div>
+        <div class="col-md-6">
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/images/Center.jpg" alt="Workplace" usemap="#workmap" width="80%" height="auto">
+            <map name="workmap">
                 <area shape="circle" coords="300,50,100" alt="Abruzzo" title="Abruzzo & Marche Wines"  id="ven">
                 <area shape="circle" coords="100,50,100" alt="Umbria & Lazio" title="Umbria &  Lazio"  id="Em">
            </map>
-    	</div>
-    	<div class="col-md-6">
-    		<div id="para4">
+        </div>
+        <div class="col-md-6">
+            <div id="para4" ng-class="myClass">
                 <h2>Umbria & Lazio Wines</h2>
-    			<h3 >Umbria </h3>
-                <p>Umbria, in central Italy, is a region of lush rolling hills, hilltop villages and iconic, historic towns (exemplified by Orvieto and Assisi). Its annual wine production of around one million hL (26 million gallons) is less than one third that of neighboring Tuscany, and makes it the country's fourth-smallest wine-producing region by volume.
+                <button> <a class="region"   href="/gal2">Gallery Wine </a></button>
+                <h3 >Umbria </h3>
+                <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">Umbria, in central Italy, is a region of lush rolling hills, hilltop villages and iconic, historic towns (exemplified by Orvieto and Assisi). Its annual wine production of around one million hL (26 million gallons) is less than one third that of neighboring Tuscany, and makes it the country's fourth-smallest wine-producing region by volume.
                 </p>
                 <h3>Lazio</h3>
                 <p>Lazio is a region in central Italy, and home to the ancient capital city of Rome. Like many Italian wine regions, Lazio's vine heritage is ancient. Its first inhabitants were the Etruscans, though it was the Latins who gave the area its original name Latium. The Romans brought the region into another era by improving trade and agriculture, although after the collapse of the Roman Empire the land was neglected. Only in the 1870s, when Rome became the capital of Italy, did this wine region flourish once again.                                        
                 </p>
-    		</div>
-    	</div>
+            </div>
+        </div>
     </div>
     <div class="row">
-    	
-    	<div class="col-md-6">
-    		<div id="para3">
-    			<h2>Abruzzo </h2>
-                <p>Abruzzo (Abruzzi) is an Italian wine region located in the mountainous central Italian region of Abruzzo along the Adriatic Sea. It is bordered by the Molise wine region to the south, Marche to the north and Lazio to the west. Abruzzo's rugged terrain, 65% of which is mountainous, help to isolate the region from the winemaking influence of the ancient Romans and Etruscans in Tuscany but the area has had a long history of wine production.
-                <h2>Marche</h2>
-    			<p>The Marche region is well known for the quality of its whites made from the prolific Verdicchio grape. Crisp, fresh Verdicchio dei Castelli di Jesi wines, easily recognisable from their green amphora bottles, have impressed wine lovers on an international scale as great partners for seafood.  However some exceptional modern wines can be found in standard bottles, many of them well-structured wines of great depth and character.
-    				
+        
+        <div class="col-md-6">
+            <div id="para3" ng-class="myClass">
+                <h2>Abruzzo & Marche Wines</h2>
+                <h2>Abruzzo </h2>
+                <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">Abruzzo (Abruzzi) is an Italian wine region located in the mountainous central Italian region of Abruzzo along the Adriatic Sea. It is bordered by the Molise wine region to the south, Marche to the north and Lazio to the west. Abruzzo's rugged terrain, 65% of which is mountainous, help to isolate the region from the winemaking influence of the ancient Romans and Etruscans in Tuscany but the area has had a long history of wine production.<br></p>
+                <button ng-click =" toggle()">Gallery</button>
+                <div ng-show = "showMe"><h2 class="head">Monte Pulcianno D'Abruzzo</h2> 
+                <p><img src="/images/pulciano.jpg" width="15%" height="auto"><br>
+                    Montepulciano d'Abruzzo is a red Italian wine made from the Montepulciano wine grape in the Abruzzo region of east-central Italy. It should not be confused with Vino Nobile di Montepulciano, a Tuscan wine made from Sangiovese and other grapes.
+ 
                 </p>
-    		</div>
-    	</div>
-    	<div class="col-md-6">
-    	
-    				
-    	
-    		</div>
-    	</div>
-    	
+                 </div>   
+                <h2>Marche</h2>
+                <p ng-mouseover="addClass()"    ng-mouseleave="removeClass()">The Marche region is well known for the quality of its whites made from the prolific Verdicchio grape. Crisp, fresh Verdicchio dei Castelli di Jesi wines, easily recognisable from their green amphora bottles, have impressed wine lovers on an international scale as great partners for seafood.  However some exceptional modern wines can be found in standard bottles, many of them well-structured wines of great depth and character. <br>                               
+                </p>
+                 <button ng-click =" toggle1()">Gallery</button>
+               <div ng-show = "show_Me">
+                <h2 class="head">Verdicchio</h2>
+               <p><img src="/images/verdicchio.jpg" width="15%" height="auto"><br>
+                 DescriptionVerdicchio is a white Italian wine grape variety grown primarily in the Marche region of central Italy. The name Verdicchio derives from verde and refers to the slight green/yellow hue that wines made from the grape can have.
+               </p> 
+            </div>
+        </div>
+        <div class="col-md-6">
+        
+                    
+        
+            </div>
+        </div>
+        </div>
          <script type="text/javascript" src='js/regione.js'></script>

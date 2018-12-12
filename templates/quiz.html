@@ -1,0 +1,270 @@
+<div class="row">
+<div class="col-md-12">
+	<h1 class="head">Guess the Grape Wine ??????</h1>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		
+
+	</div>
+	<div class="col-md-4">
+		
+       <button type="button" align-item="center" class="btn btn-success " data-toggle="modal" data-target="#myModal1">Start Quiz</button>
+
+    </div>
+	
+
+	<div class="col-md-4">
+		<div id="cont"></div>
+	</div>
+</div>
+
+                               <!-- Modal Chardonnay !-->
+ <div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!--    Modal content-->
+     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quiz 1 Wine</h4>
+      </div>
+      <div class="modal-body">
+        <ol>
+        	<li>Acidity: High</li>                                 
+        	<li>Color: White</li>
+        	<li>Body: Light</li>                        <!-- Modal 1 Quiz 1 -->
+        	<li>Tannic:High</li>
+        	<li>Caratteristic: Apple,Melon</li>
+        </ol>
+        <h3>Guess the Wine ?????????</h3>
+        <form  method="post" action="" >
+           <select  id="Grape1" > 
+           	  <option value="" disabled selected>Grape1</option>
+              <option  value="Chardonnay">Chardonnay</option>
+              <option   value="Gavi">Gavi</option>
+              <option   value="Pinot Grigio">Pinot Grigio</option>
+              <option   value="Vermentino">Vermentino</option>
+              <option   value="Greganico">Greganico</option> 
+          </select>
+          <button type="button"  onclick="search(1)" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Send</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+                         <!-- Modal Syrah -->
+
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!--    Modal content-->
+     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quiz 2 Wine</h4>
+      </div>
+      <div class="modal-body">
+        <ol>
+        	<li>Acidity: Light</li>                                 
+        	<li>Color: Red</li>
+        	<li>Body: Full</li>                        <!-- Modal 1 Quiz 2 -->
+        	<li>Tannic:High</li>
+        	<li>Caratteristic: Cherry,Chocolate,oak</li>
+        </ol>
+        <h3>Guess the Wine ?????????</h3>
+        <form  method="post" action="" >
+           <select  id="Grape2" > 
+           	  <option value="" disabled selected>Grape2</option>
+              <option  value="Syrah">Syrah</option>
+              <option   value="Sangiovese">Sangiovese</option>
+              <option   value="Pinot Noir">Pinot Noir</option>
+              <option   value="Chianti">Chianti</option>
+              <option   value="Barbera">Barbera</option> 
+          </select>
+          <button type="button"  onclick="search(2)" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">Send</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+                      <!-- Modal Merlot -->
+
+<div id="myModal3" class="modal fade" >
+  <div class="modal-dialog">
+
+<!--    Modal content-->
+     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quiz 3 Wine</h4>
+      </div>
+      <div class="modal-body">
+        
+        <h3>Guess the France Grape ?????????</h3>
+        <form  method="post"  action="" >
+           <select  id="Grape3" > 
+           	  <option value="" disabled selected>Grape3</option>
+              <option  value="Gaglianico">Gaglianico</option>
+              <option   value="Sangiovese">Sangiovese</option>
+              <option   value="Merlot">Merlot</option>
+              <option   value="Chianti">Chianti</option>
+              <option   value="Barbera">Barbera</option> 
+          </select>
+          <button type="button"  onclick="search(3)" data-dismiss="modal" role="dialog" data-toggle="modal" data-target="#myModal4">Send</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+               <!-- Modal Quiz 4 -->
+
+<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!--    Modal content-->
+     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quiz 4 Wine</h4>
+      </div>
+      <div class="modal-body">
+        
+        <h3>Guess the France Grape ?????????</h3>                                         <!-- Modal Quiz 4 -->
+        <form  method="post"  action=""  >
+                  <input type="radio"  name="Grape4" value="Vermentino"  >Vermentino<br>
+                  <input type="radio"  name="Grape4" value="Negroamaro">Negroamaro<br>
+                  <input type="radio"  name="Grape4" value="Savignon" checked  >Savignon<br>
+                  <input type="radio"  name="Grape4" value="Fratato">Fratato<br>
+                  <input type="radio"  name="Grape4" value="Asti">Asti<br>
+                 <button type="button"  onclick="search(4)" data-dismiss="modal"  data-toggle="modal" data-target="#myModal5">Send</button>                          
+                </form>
+                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+                   <!-- Modal 5  Quiz 5 -->
+
+<div id="myModal5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!--    Modal content-->
+     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quiz 4 Wine</h4>
+      </div>
+      <div class="modal-body">
+        
+        <h3>Guess the red with light Tannic ????????</h3>                                         <!-- Modal Quiz 4 -->
+        <form  method="post"  action=""  >
+                  <select  id="Grape5" > 
+                 	  <option value="" disabled selected>Grape5</option>
+                      <option  value="Chianti">Chianti</option>
+                      <option   value="Sangiovese">Sangiovese</option>
+                      <option   value="Pinot">Pinot</option>
+                      <option   value="Cabernet">Cabernet</option>
+                      <option   value="Barbera">Barbera</option> 
+                 </select>
+                 <button type="button"  onclick="search(5)" data-dismiss="modal">Send</button>                          
+                </form>
+                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+            <!-- Script case control to the Grape -->
+
+
+
+	
+ 
+<script>
+   function search(a){
+        var t;    
+        if (a===1){
+         var gr = document.getElementById("Grape1").value;
+         count=0;
+        }
+        if (a===2){
+          var gr = document.getElementById("Grape2").value;
+        }
+        if (a===3){
+          var gr = document.getElementById("Grape3").value;	
+        }
+        if (a===4){
+          //var gr=document.getElementsByName("Grape4").value;
+          var gr=document.querySelector('input[name="Grape4"]:checked').value          
+        }
+        if (a===5){
+        	var gr = document.getElementById("Grape5").value;	
+        }
+        switch(gr){
+          case "Chardonnay" :            
+            alert("Good Answer")
+            t=true
+            break;
+          case "Syrah" : 
+            alert("Good Answer")
+            t=true
+            break;
+          case "Merlot" : 
+            alert("Good Answer")
+            t=true
+            break;
+          case "Savignon" : 
+            alert("Good Answer")
+            t=true
+            break;
+          case "Pinot" : 
+            alert("Good Answer")
+            t=true
+            break;
+          default :
+            alert("Sorry, Wrong Answer Try Again");
+            t=false;
+        
+        }
+         if (t===true){
+         	count++;
+         	ab=count;
+         }else if (count!=0){
+                    ab=count;     
+         }
+        document.getElementById("cont").innerHTML = ("Your Score is  "+ ab +  " points");
+        if (count===5){
+            document.getElementById("cont").innerHTML = ("Congratulations "+ ab +  " points. You are  the Master");
+        }  
+    };
+</script>
