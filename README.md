@@ -49,13 +49,13 @@
    - All the pages respond very well and jquery library work very well.
      The Navigation Bar works perfect.
      Final  Testig is good
+- Google chrome
 
 - Internet Explorer   
     - Message Script: Internet Explorer resctired from running scripts or Activex Controls.Button  Allow Block Content.
      All the pages rspond very vell and jquery library work vell after  push the button Allow Block Content.
      The Navigation Bar works perfect.
-     The Audio and the Songs have the differnt size and style.
-     The pictures don't accept the css class huerotate and grayscale.
+    
     - Final Testing is good
 - Microsoft Edge
   - All the pages work well but the pictures on the Index.html have the light symmetric
