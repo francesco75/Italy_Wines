@@ -45,11 +45,10 @@
 ## Testing Browsers
 - The Testing Browser tests  the website on the different browser and
     checks the different like the picture size  responsive navbar and scripts jquery . 
-- Google 
-   - All the pages respond very well and jquery library work very well.
+- Google Chrome
+   - All the pages respond very well and jquery library and angular events work very well.
      The Navigation Bar works perfect.
      Final  Testig is good
-- Google chrome
 
 - Internet Explorer   
     - Message Script: Internet Explorer resctired from running scripts or Activex Controls.Button  Allow Block Content.
@@ -57,20 +56,10 @@
      The Navigation Bar works perfect.
     
     - Final Testing is good
-- Microsoft Edge
-  - All the pages work well but the pictures on the Index.html have the light symmetric
-    The navbar has the differnt size but work well.
-    All the jquery library works vell.
-  - Final Testing is almost good   
-- Mozilla Firefox
-    -The Website works perfect.
-     The navbar and all the links work vell.
-     The jquery library works well.
-    - Final Testing is good.
 
 ## Testing Devices Responsive
 
-### Tech Used: Blisk
+### Tech Used: 
    - This Testing responsive is used to test the website with
       the different devices and study the navbar reactive and the 
       table audio and form
