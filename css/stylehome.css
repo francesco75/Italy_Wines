@@ -7,8 +7,8 @@ body {
        {
 
 
-              background-image: url("/images/vino.jpg");
-              background-color: #cccccc;
+              background-image:url("/images/vino.jpg");
+              background-color: #cccccc;               
               min-height: 50%;
               background-repeat: no-repeat;
               background-position: center;
@@ -142,10 +142,4 @@ figcaption{
              border: 1px black  solid;
              padding-left: 4px;
              padding-top:4px; 
-
-
-}
-#a0,#lom,#ven,#Em{
-                      top:22%;
-                      left:11.48%;
 }

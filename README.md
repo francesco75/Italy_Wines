@@ -30,7 +30,7 @@
            - Islans: I describe the Islands Italy Wines with Workmap and connect with jquery and Angualar events.
                       The gallery wine for each region and most important wines
                                  
-                       
+           - I create the Usemap with Generator Usemap Image with my Coordinates Image Map            
                       
                                  
 - Product : 
@@ -43,26 +43,31 @@
      This page shows the quiz to guess the right grape or the country's grape.   
 
 ## Testing Browsers
-- The Testing Browser tests  the website on the different browser and
+- The Testing Browser tests  the website on the different browsers and
     checks the different like the picture size  responsive navbar and scripts jquery . 
 - Google Chrome
    - All the pages respond very well and jquery library and angular events work very well.
      The Navigation Bar works perfect.
      Final  Testig is good
 
-- Internet Explorer   
-    - Message Script: Internet Explorer resctired from running scripts or Activex Controls.Button  Allow Block Content.
-     All the pages rspond very vell and jquery library work vell after  push the button Allow Block Content.
-     The Navigation Bar works perfect.
-    
-    - Final Testing is good
 
+- Internet Explorer       
+     All the pages rspond very vell and jquery library and Angular Events work well.
+     The Navigation Bar works perfect.
+     My bachgroun gradient is not working well and dispersive.
+    The buttons work well and the site is reactive.
+    - Final Testing is good
+- Mozilla Firefox
+     All the pages rspond very vell and jquery library and Angular Events work well.
+     The Navigation Bar works perfect.
+    The buttons work well and the site is reactive.
+    - Final Testing is good
 ## Testing Devices Responsive
 
-### Tech Used: 
+### Tech Used: Responsive Design Checker 
    - This Testing responsive is used to test the website with
       the different devices and study the navbar reactive and the 
-      table audio and form
+      table and form
    - Iphone 
        The Testing is perfect.
        All the pages respond very vell
@@ -86,16 +91,8 @@
 ##  Testing Forms
    ### Test Validation Form
        The testing is perfect.
-       If I left the field empty i have the following message"Please , fill in this field".
-       If I insert the different pattern password or email i have 
-       the following message "please, match the format requested" 
-##   Testing Speed Website
-### PageSpeed Tools
-- This Testing tests the speed pages and optimization betweeen the Desktop
-      and Mobile checking almost the pages.
-- Testing Pages
-      Mobile = Low 47/100
-      Laptop = Medium 70/100      
+       If the left the filed empty i can't press the button submit.
+       
                 
 # Tech Used
 ## Codec & Style
