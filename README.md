@@ -93,7 +93,18 @@
        The testing is perfect.
        If the left the filed empty i can't press the button submit.
        
-                
+##  Testing  Javascript Jasmine
+   ### Testing 1 run all
+        - specs 3 
+        - failure 0   
+   ### Testing 2
+         _ Change the value to be 4 to 5
+         - specs 3
+         - failure 1
+   ### Testing 3
+        - Change the value 19 to 20
+        - specs 3
+        - failure 1  
 # Tech Used
 ## Codec & Style
 - Html5 Css3
