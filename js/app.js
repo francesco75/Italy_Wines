@@ -1,4 +1,4 @@
-angular.module('App', ['ngRoute', 'RouteControllers','UserService']);
+angular.module('App', ['ngRoute', 'RouteControllers','UserService','angular-storage']);
  
 angular.module('App').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -23,10 +23,16 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
     })
     
     .when('/accounts/register', {
-                controller: 'RegisterController',
                 templateUrl: 'templates/register.html',
+                controller: 'RegisterController',
                 
             })
+    .when('/login', {
+                templateUrl: 'templates/login.html',
+                controller: 'loginController',
+                
+            })
+    
     
     .when("/center", {
         templateUrl : "templates/center.html",
