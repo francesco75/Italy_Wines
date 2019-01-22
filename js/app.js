@@ -28,6 +28,14 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
                 
             })
     
+    .when('/login', {
+                templateUrl: 'templates/login.html',
+                controller: 'loginController',
+                
+            })
+
+
+    
     .when("/center", {
         templateUrl : "templates/center.html",
         controller: 'HomeController',
