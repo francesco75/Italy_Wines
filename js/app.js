@@ -23,11 +23,10 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
     })
     
     .when('/accounts/register', {
-                controller: 'RegisterController',
                 templateUrl: 'templates/register.html',
+                controller: 'RegisterController',
                 
             })
-    
     .when('/login', {
                 templateUrl: 'templates/login.html',
                 controller: 'loginController',
