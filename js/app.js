@@ -90,7 +90,7 @@
             })
 
             .otherwise({ redirectTo: '/login' });
-    }
+    //}
 
     //   run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
     //  function run($rootScope, $location, $cookies, $http) {
@@ -111,4 +111,4 @@
     //     });
     // }
 
-})();
+}();
