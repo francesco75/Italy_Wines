@@ -1,0 +1,2 @@
+$("#hidshow").hide();
+

@@ -13,3 +13,19 @@
      #gallery
      #product
      #app.js
+ - 01/02/2019    
+- Add register login home and user service : Done it
+_ Add appic.js
+ Change the log in with log out and user
+- 06/02/2019
+     - Change app.js
+     - Change the controller.js
+     - Change the template: line row   north center south islands 
+                                       galnorth1 , galnorth2 , galcenter1, galcennter2.
+     ##########################  Done it ################################################# 
+- 27/02/2019
+     - Log in and log out navbar with index.html
+     _ Insert the jquery login.controller 
+     - Add the exit.html
+     - Add navbar.js
+     

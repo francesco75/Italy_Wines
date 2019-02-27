@@ -46,7 +46,7 @@
          .when("/gal1", {
         templateUrl : "templates/galnorth1.html",
         controller: 'HomController',
-    }) 
+    })
          .when("/gal3", {
         templateUrl : "templates/galnorth2.html",
         controller: 'HomController',
@@ -82,11 +82,6 @@
                 controller: 'RegisterController',
                 templateUrl: 'register/register.view.html',
                 controllerAs: 'vm',
-            })
-            .when('/logout', {
-                controller: 'HomeController',
-                templateUrl: 'templates/exit.html',
-                
             })
 
             .otherwise({ redirectTo: '/login' });
