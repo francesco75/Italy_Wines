@@ -1,67 +1,63 @@
-angular.module('App', ['ngRoute', 'RouteControllers','UserService']);
- 
-angular.module('App').config(function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);  // Enable href routing without hashes
-    
+(function () {
+    'use strict';
 
-     
+    angular
+        .module('App',['ngRoute', 'ngCookies'])
+        .config(config)
+        .run(run);
 
-
-    $routeProvider.when('/', {
-        templateUrl: 'templates/north.html',
-        controller: 'HomeController',
+    config.$inject = ['$routeProvider', '$locationProvider'];
+    function config($routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);  // Enable hashed //
+        $routeProvider
+           .when('/', {
+             controller: 'HomController', 
+             templateUrl: 'templates/north.html',
+           
+         })
+           .when('/north', {
+             controller: 'HomController', 
+             templateUrl: 'templates/north.html',
+           
+         })
+        .when('/center', {
+        controller: 'HomController',    
+        templateUrl : 'templates/center.html',
         
-    
-    })
-    $routeProvider.when('/todo', {
+          })
+        
+        .when('/todo', {
         templateUrl: 'templates/product.html',
-        controller: 'HomeController'
+        controller: 'HomController'
     })
-    $routeProvider.when('/todo1', {
+    
+        .when('/todo1', {
         templateUrl: 'templates/grapes.html',
         controller: 'HomeController'
     })
-    
-    .when('/accounts/register', {
-                templateUrl: 'templates/register.html',
-                controller: 'RegisterController',
-                
-            })
-    .when('/login', {
-                templateUrl: 'templates/login.html',
-                controller: 'loginController',
-                
-            })
-
-
-    
-    .when("/center", {
-        templateUrl : "templates/center.html",
-        controller: 'HomeController',
-    })
     .when("/south", {
         templateUrl : "templates/south.html",
-        controller: 'HomeController',
+        controller: 'HomController',
     })
         .when("/island", {
         templateUrl : "templates/islands.html",
-        controller: 'HomeController',
+        controller: 'HomController',
     })
          .when("/gal1", {
         templateUrl : "templates/galnorth1.html",
-        controller: 'HomeController',
-    })
+        controller: 'HomController',
+    }) 
          .when("/gal3", {
         templateUrl : "templates/galnorth2.html",
-        controller: 'HomeController',
+        controller: 'HomController',
     })
          .when("/gal2", {
         templateUrl : "templates/galcenter1.html",
-        controller: 'HomeController',
+        controller: 'HomController',
     })
          .when("/gal4", {
         templateUrl : "templates/galnorth3.html",
-        controller: 'HomeController',
+        controller: 'HomController',
     })
          
        .when("/test", {
@@ -69,7 +65,50 @@ angular.module('App').config(function($locationProvider, $routeProvider) {
         controller: 'HomeController',
     })
     
+             
+             .when('/home', {
+                 controller: 'HomeController',
+                 templateUrl: 'home/home.view.html',
+                 controllerAs: 'vm',
+             })
 
-     
-            
-});
+            .when('/login', {
+                controller: 'LoginController',
+                templateUrl: 'login/login.view.html',
+                controllerAs: 'vm',
+            })
+
+            .when('/register', {
+                controller: 'RegisterController',
+                templateUrl: 'register/register.view.html',
+                controllerAs: 'vm',
+            })
+            .when('/logout', {
+                controller: 'HomeController',
+                templateUrl: 'templates/exit.html',
+                
+            })
+
+            .otherwise({ redirectTo: '/login' });
+    }
+
+      run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
+     function run($rootScope, $location, $cookies, $http) {
+          // keep user logged in after page refresh
+          $rootScope.globals = $cookies.getObject('globals') || {};
+          if ($rootScope.globals.currentUser) {
+              $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
+          }
+      
+      
+        $rootScope.$on('$locationChangeStart', function (event, next, current) {
+            // redirect to login page if not logged in and trying to access a restricted page
+            var restrictedPage = $.inArray($location.path(), ['/login', '/register']) === -1;
+            var loggedIn = $rootScope.globals.currentUser;
+            if (restrictedPage && !loggedIn) {
+                $location.path('/login');
+            }
+        });
+    }
+
+})();

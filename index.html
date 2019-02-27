@@ -18,7 +18,7 @@
 <body ng-app='App'  >
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container" >
+        <div class="container" ng-controller="HomeController">
             <div class="navbar-header">
                 <a class="navbar-brand" href="."> Italian Wine</a>
                 <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
@@ -32,8 +32,10 @@
                  <li><a href=".">Home</a></li>
                  <li><a href="todo">Production</a></li>
                  <li><a href="todo1">Grapes</a></li>
-                 <li><a href="accounts/register">Register </a></li>
-                 <li><a href="login">Login</a></li>                 
+                 <li><a href="register">Register </a></li>
+                 <li id="hidden"><a  href="login">LogIn</a></li>
+                 <li id="hidshow" ><a id="btn" href="logout " >LogOut</a></li>
+
                  <li><a href="test">Quiz </a></li>
                </ul>    
         </div>
@@ -41,6 +43,7 @@
     <div class="container" >
     
      <div ng-include="'templates/home.html'"></div>
+       <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
 
      <div class="row"  >
       <div class="col-md-3">
@@ -72,19 +75,30 @@
     </div>
     <footer class="col-12">
                 <p> Copyright</p>
-                <p>@The Wine Italy  2018</p>
+                <p>@The  Italy Wine  2018</p>
                 
     </footer>
 </div>
 
+<script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
 <script src='js/app.js'></script>
 
 <script src='js/controller.js'></script>
+<script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
 
-<!--<script src='js/applic.js'></script>!-->
+    <!-- Real user service that uses an api -->
+    <script src="app-services/user.service.js"></script>
 
-<!--<script src='js/login.controller.js'></script>!-->
-<script src='js/service.js'></script>
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="app-services/user.service.local-storage.js"></script>
+
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="register/register.controller.js"></script>
+
+     <script src='js/navbar.js'></script>
 
 
 </body>
