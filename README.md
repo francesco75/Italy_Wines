@@ -38,7 +38,9 @@
 - Grape: 
      This page shows the main grape and to create yourself with correct wine features.     
 - Register :  
-      This page shows  the small registration form with Angular js .
+      This page shows  the  registration form with Angular js .
+- Login : 
+      Page login with username and password.       
 - Quiz : 
      This page shows the quiz to guess the right grape or the country's grape.   
 
@@ -112,7 +114,7 @@
 - Javascript
 ## Bower Components
   - Angular js
-  - Angular Routing and Service
+  - Angular Routing Controller and Service
   - Bower.json -Package.json
 
   - Bootstrap 3.3.7
