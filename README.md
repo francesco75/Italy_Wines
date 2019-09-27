@@ -72,15 +72,15 @@
       table and form
    - Iphone 
        The Testing is perfect.
-       All the pages respond very vell
+       All the pages respond very well
        The navbar works vell and navigation is fast and flexible.
    - Ipad
         The testing is perfect
-        All the pages respond very vell
+        All the pages respond very well
        The navbar works vell and navigation is fast and flexible
    - Desktop Xl
        The Testing is perfect.
-       All the pages respond very vell
+       All the pages respond very well
        The navbar works vell and navigation is fast and flexible.
        The visual impact is dispersive
    - Desktop HIDPI Desktop MDPI   
@@ -88,8 +88,8 @@
 
    - Laptop Small  Large
        The Testing is perfect
-       All the pages respond very vell
-       The navbar works vell and navigation is fast and flexible
+       All the pages respond very well
+       The navbar works well and navigation is fast and flexible
 ##  Testing Forms
    ### Test Validation Form
        The testing is perfect.
