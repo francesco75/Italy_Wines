@@ -27,7 +27,7 @@
            - South  : I describe the South Italy Wines with Workmap and connect with jquery and Angular events.
                       The gallery wine for each region and most important wines.
 
-           - Islans: I describe the Islands Italy Wines with Workmap and connect with jquery and Angualar events.
+           - Islands: I describe the Islands Italy Wines with Workmap and connect with jquery and Angualar events.
                       The gallery wine for each region and most important wines
                                  
            - I create the Usemap with Generator Usemap Image with my Coordinates Image Map            
@@ -60,7 +60,7 @@
     The buttons work well and the site is reactive.
     - Final Testing is good
 - Mozilla Firefox
-     All the pages rspond very vell and jquery library and Angular Events work well.
+     All the pages rspond very well and jquery library and Angular Events work well.
      The Navigation Bar works perfect.
     The buttons work well and the site is reactive.
     - Final Testing is good
