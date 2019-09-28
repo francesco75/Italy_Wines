@@ -2,12 +2,12 @@
 ## Overview
 ### Title The Italy Wine
 ## What Does it do ?
-    This Website describes the  Italy Wine for each part of Italy North Center South Islands  and shows the grapes and the gallery wines.
+- This Website describes the  Italy Wine for each part of Italy North Center South Islands  and shows the grapes and the gallery wines.
     My project describes the wine for each Italy region with the most important wines .
     It describes the production and the different caratteristich wine like acidity tannic color and body.
     I proposed the quiz to guess the grape wine or the region .
 ## Starter
-     I start to create the Web Pages writing in the paper after i used the text file 
+- I start to create the Web Pages writing in the paper after i used the text file 
      to develop the text and focus different points of my Website pages. 
      I created the jumbotron with the images background and the text and investigate to find the right suitable picture .
      I used linear gradient to manage my background body.
