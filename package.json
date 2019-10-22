@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/francesco75/Italy_Wines#readme",
   "dependencies": {
-    "ecstatic": "^3.3.0"
+    "ecstatic": "^3.3.2"
   }
 }
