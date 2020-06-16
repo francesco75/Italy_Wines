@@ -137,11 +137,11 @@ p.alpha1{
         
 
 }
-figcaption{
-             font-weight: bold;
-             border: 1px black  solid;
-             padding-left: 4px;
-             padding-top:4px; 
+.card-text{
+            font-weight: bold;   
 
+}
+.card-title{
+             font-family: 'Kaushan Script';
 
 }
